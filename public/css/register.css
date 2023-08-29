@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #e3f2fd;
+}
+.pt{
+    display: flex; 
+    align-items:center; 
+    margin:0px;
+    font-weight: 500;;
+}
+.right{
+    display: flex; 
+    flex-direction:row;
+    gap:10px;
+}

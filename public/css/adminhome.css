@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #e3f2fd;
+}
+.navbar-brand{
+    display:flex; 
+    padding:0px; 
+    margin:0px 10px 0px 10px; 
+    align-items:center;
+}
+.cardall{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content:center;
+    align-items:center;
+    margin-inline:auto;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width:18rem; 
+}
+.card-body p{
+    margin:5px;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.right{
+    display: flex; 
+    flex-direction:row;
+    gap:10px;
+}
+/* .card-body img{
+    width:250px;
+    height:250px;
+} */
