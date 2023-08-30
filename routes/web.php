@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
 
 
 /*
@@ -37,3 +38,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/login', [UserController::class, 'login'])->name('login');
     Route::post('/logined', [UserController::class, 'logined'])->name('logined');
     Route::post('/logout', [UserController::class, 'logout'])->name('logout');
+    route::post('/addedToCart/{id}', [CartController::class, 'added'])->name('cartadd');

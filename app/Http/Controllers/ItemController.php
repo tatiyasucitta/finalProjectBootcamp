@@ -18,7 +18,7 @@ class ItemController extends Controller
         return view('add', ['cats'=> Category::all()]);
     }
     public function create(request $request){
-        dd($request);
+        // dd($request);
 
         $request->validate([
             'name'=>'required|min:5|max:80',

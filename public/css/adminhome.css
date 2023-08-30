@@ -35,7 +35,11 @@
     flex-direction:row;
     gap:10px;
 }
-/* .card-body img{
-    width:250px;
-    height:250px;
-} */
+.cart{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card-oos{
+    background-color:lightgrey;
+}

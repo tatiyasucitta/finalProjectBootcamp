@@ -20,4 +20,8 @@ class Item extends Model
     public function Category(){
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    public function Cart(){
+        return $this->belongsTo(Cart::class, 'item_id');
+    }
 }
