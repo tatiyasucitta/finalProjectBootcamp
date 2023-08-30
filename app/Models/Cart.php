@@ -13,7 +13,8 @@ class Cart extends Model
     ];
 
     public function Item(){
-        return $this->hasMany(Item::class, 'item_id');
+        return $this->hasMany(Item::class, 'id', 'item_id');
     }
+
     use HasFactory;
 }

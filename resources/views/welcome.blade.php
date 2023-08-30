@@ -14,8 +14,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content:space-between">
                 <ul class="navbar-nav">
                     <a class="navbar-brand" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" aria-current="page" href="{{route('createitem')}}">Add</a>
-                    <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">create category</a>
+                    <a class="nav-link" aria-current="page" href="{{route('viewcart')}}">Cart</a>
                 </ul>
                 <form class="d-flex" role="search" method="POST">
                     @csrf

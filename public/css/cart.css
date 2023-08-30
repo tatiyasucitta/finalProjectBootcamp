@@ -1,0 +1,30 @@
+.list-group-item{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.descprice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-price{
+    MARGIN:0PX;
+}
+.list-group-item img{
+    width:40%;
+    /* height:50%; */
+}   
+.total{
+    /* margin-left:510px; */
+    /* display: flex;
+    justify-content: end;
+    align-items: end;  */
+    /* flex-direction: space-between;   */
+}

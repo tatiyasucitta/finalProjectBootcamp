@@ -15,7 +15,7 @@
                 <ul class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                     <a class="navbar-brand" aria-current="page" href="{{route('createitem')}}" style="display:flex; padding:0px;margin:0px 10px 0px 10px; align-items:center;">Add</a>
-                    <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">create category</a>
+                    <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">Create Category</a>
                 </ul>
             </div>
         </div>

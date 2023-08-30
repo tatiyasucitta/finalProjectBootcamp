@@ -32,10 +32,11 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/createcategory', [CategoryController::class, 'create'])->name('createcategory');
         Route::post('/createdcategory', [CategoryController::class, 'created'])->name('createdcategory');
     });
+    Route::post('/addedToCart/{id}', [CartController::class, 'added'])->name('cartadd');
+    Route::get('/carts', [CartController::class, 'view'])->name('viewcart');
 });
-    Route::get('/register', [UserController::class, 'register'])->name('register');
-    Route::post('/registered', [UserController::class, 'registered'])->name('registered');
-    Route::get('/login', [UserController::class, 'login'])->name('login');
-    Route::post('/logined', [UserController::class, 'logined'])->name('logined');
-    Route::post('/logout', [UserController::class, 'logout'])->name('logout');
-    route::post('/addedToCart/{id}', [CartController::class, 'added'])->name('cartadd');
+Route::get('/register', [UserController::class, 'register'])->name('register');
+Route::post('/registered', [UserController::class, 'registered'])->name('registered');
+Route::get('/login', [UserController::class, 'login'])->name('login');
+Route::post('/logined', [UserController::class, 'logined'])->name('logined');
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');

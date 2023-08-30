@@ -8,13 +8,21 @@ use App\Models\Item;
 
 class CartController extends Controller
 {
+    public function view(){
+        $item = Cart::all();
+        return view('cart', ['items'=>$item,
+        
+    
+    ]);
+    }
     public function added(request $request, $id){
         $item = Item::find($id);
-        // dd($request->quantity);
+        // dd($item);
 
         Cart::create([
             'quantity'=>$request->quantity,
-            'item_id'=>$id
+            'item_id'=>$id,
+            'categoryId'=>$item->category_id,
         ]);
 
         $item->update([

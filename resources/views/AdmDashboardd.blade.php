@@ -18,7 +18,7 @@
                 <ul class="navbar-nav">
                 <a class="navbar-brand" aria-current="page" href="/">Home</a>
                 <a class="nav-link" aria-current="page" href="{{route('createitem')}}">Add</a>
-                <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">create category</a>
+                <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">Create Category</a>
                 </ul>
                 <form class="d-flex" role="search" method="POST">
                     @csrf
