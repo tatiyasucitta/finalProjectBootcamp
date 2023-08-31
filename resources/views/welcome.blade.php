@@ -15,6 +15,7 @@
                 <ul class="navbar-nav">
                     <a class="navbar-brand" aria-current="page" href="/">Home</a>
                     <a class="nav-link" aria-current="page" href="{{route('viewcart')}}">Cart</a>
+                    <a class="nav-link" aria-current="page" href="{{route('history')}}">Facture History</a>
                 </ul>
                 <form class="d-flex" role="search" method="POST">
                     @csrf

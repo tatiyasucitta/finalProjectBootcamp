@@ -19,12 +19,20 @@
 }
 .list-group-item img{
     width:40%;
-    /* height:50%; */
 }   
-.total{
-    /* margin-left:510px; */
-    /* display: flex;
+.button{
+    margin: 20px 20px 0px 0px;
+    display: flex;
     justify-content: end;
-    align-items: end;  */
+    align-items: end; 
     /* flex-direction: space-between;   */
+}
+.text h5{
+    text-decoration-line: none;
+    color:white;
+    margin-left:30px;
+}
+.list-group{
+    background-color: rgb(230, 230, 137);
+    
 }

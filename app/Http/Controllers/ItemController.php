@@ -14,6 +14,10 @@ class ItemController extends Controller
         $item = Item::all();
         return view('welcome', ['items'=>$item]);
     }
+    public function adminshow(){
+        $item = Item::all();
+        return view('AdmDashboard', ['items'=>$item]);
+    }
     public function createForm(){
         return view('add', ['cats'=> Category::all()]);
     }
@@ -47,7 +51,7 @@ class ItemController extends Controller
             'price' => $request->price,
             'stock' => $request->stock
         ]);
-        return redirect('/')->with('success', 'Item added!');
+        return redirect('/admin/dashboard')->with('success', 'Item added!');
     }
 
     public function update($id){
@@ -91,13 +95,13 @@ $input = $request->all();
             'price' => $request->price,
             'stock' => $request->stock
         ]);
-        return redirect('/')->with('success', 'Item Updated!');
+        return redirect('/admin/dashboard')->with('success', 'Item Updated!');
     }
 
     public function delete($id){
         $item = Item::find($id);
         $item->delete();
 
-        return redirect('/');
+        return redirect('/admin/dashboard');
     }
 }

@@ -20,6 +20,6 @@ class CategoryController extends Controller
             'categoryName' => $request->categoryName
         ]);
 
-        return redirect('/')->with('success', 'category created!');
+        return redirect('/admin/dashboard')->with('success', 'category created!');
     }
 }

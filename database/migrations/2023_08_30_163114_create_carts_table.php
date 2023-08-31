@@ -13,9 +13,16 @@ return new class extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
+            $table->string('invoice_id')->nullable();
             $table->unsignedBigInteger('quantity');
             $table->unsignedBigInteger('item_id');
             $table->foreign('item_id')->references('id')->on('items')->onupdate('cascade')->ondelete('cascade');
+            $table->unsignedbiginteger('faktur_id')->nullable();
+            $table->foreign('faktur_id')
+                ->references('id')
+                ->on('fakturs')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
