@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class Usercontroller extends Controller
 {
@@ -18,7 +19,6 @@ class Usercontroller extends Controller
             'email' => 'required|email:dns|regex:/(.*)@gmail\.com/',
             'tlp' => 'required|regex:/^08/|max:12',
             'password'=>'required|min:6|max:12',
-            'confirm_password'=>'required|min:6|max:12'
         ]);
 
         if($request->password != $request->confirm_password){
@@ -30,7 +30,6 @@ class Usercontroller extends Controller
             'email'=>$request->email,
             'tlp'=>$request->tlp,
             'password'=>Hash::make($request->password),
-            'confirm_password'=>$request->confirm_password,
         ]);
         return redirect('login')->with('success', 'User registered!');
     }

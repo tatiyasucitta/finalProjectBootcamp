@@ -20,9 +20,9 @@
                 <a class="nav-link" aria-current="page" href="{{route('createitem')}}">Add</a>
                 <a class="nav-link" aria-current="page" href="{{route('createcategory')}}">Create Category</a>
                 </ul>
-                <form class="d-flex" role="search" method="POST">
+                <form class="d-flex" action="{{route('logout')}}" method="POST">
                     @csrf
-                    <button action="{{route('logout')}}"class="btn btn-outline-danger" type="submit">Logout</button>
+                    <button class="btn btn-outline-danger" type="submit">Logout</button>
                 </form>
             </div>
         </div>
